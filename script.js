@@ -1,7 +1,17 @@
-//your JS code here. If required.
-const termsCheckBox = document.getElementById("terms");
-const submitBtn = document.getElementById("submitBtn");
+const termsCheckbox = document.getElementById('terms');
+const submitBtn = document.getElementById('submitBtn');
 
-termsCheckBox.addEventListener("change", function () {
-	submitBtn.disabled = !this.checked;
+termsCheckbox.addEventListener('change', function() {
+    
+    // Check if the checkbox is ticked
+    if (termsCheckbox.checked === true) {
+        // Enable the button
+        submitBtn.disabled = false;
+    } 
+    // If the checkbox is unticked
+    else {
+        // Disable the button
+        submitBtn.disabled = true;
+    }
+    
 });

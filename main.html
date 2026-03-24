@@ -1,34 +1,43 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<form action="submit-form.php" method="post">
-		<div class="form-group">
-			<label for="name">Name:</label>
-			<input type="text" id="name" name="name" required/>
-		</div>
 
-		<div class="form-group">
-			<label for="email">Email:</label>
-			<input type="email" id="email" name="email" required />
-		</div>
+    <div class="form-container">
+        <h2>Register</h2>
+        
+        <form action="submit-form.php" method="POST" id="myForm">
+            
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
 
-		<div class="form-group">
-			<input type="checkbox" id="terms" name="terms" required />
-			<label for="terms" style="width: auto;">I accept the terms and conditions</label>
-		</div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-		<button id="submitBtn" disabled type="submit">Submit</button>
-	</form>
-    <script type="text/javascript" src="./script.js">
-</script>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
 
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I accept the terms and conditions</label>
+            </div>
+
+            <button type="submit" id="submitBtn" disabled>Submit</button>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
