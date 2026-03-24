@@ -7,6 +7,7 @@ termsCheckbox.addEventListener('change', function() {
     if (termsCheckbox.checked === true) {
         // Enable the button
         submitBtn.disabled = false;
+		submitBtn.click();
     } 
     // If the checkbox is unticked
     else {
